@@ -17,6 +17,9 @@ TARGET_USES_DEVICE_SPECIFIC_KEYMASTER := true
 $(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-xdroid
+
 # Overlays
 PRODUCT_PACKAGES += \
     xiaomi_pine_overlay \
